@@ -8,7 +8,7 @@ import { Form } from "@/components/ui/form"
 
 import CustomFormField from "../ui/CustomFormField"
 
-export enum FormFieldTypes {
+export enum FormFieldType {
     INPUT = "input",
     CHECKBOX = "checkbox",
     TEXT_AREA = "textarea",
@@ -44,7 +44,7 @@ const PatientForm = () => {
                 </section>
                 <CustomFormField
                     control={form.control}
-                    fieldType={FormFieldTypes.INPUT}
+                    fieldType={FormFieldType.INPUT}
                     name="name"
                     label="Full Name"
                     placeholder="Enter your full name"
